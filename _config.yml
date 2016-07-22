@@ -1,26 +1,37 @@
-# Setup
-title:        Tim
-tagline:      ""
-baseurl:      ""
-paginate:     1
+# Site settings
+title: Tim
+baseurl: "" # the subpath of your site, e.g. /blog/
+url: "http://tmzhang.com" # the base hostname & protocol for your site
 
-# About/contact
-author:
-  name:       Tim
-  url:        TmFeiouna.github.io 
-
-# Gems
-#gems:
-#  - jekyll-paginate
-
-#Others
+# Build settings
 #markdown: kramdown
+permalink: /:year/:month/:title.html   
+paginate: 10                                
+author:                                     #自定义常亮
+  name: Tim
+title: Tim                             #自定义常量
 
-#include: ["_others","js"]
+# avatar头像及Favicon
+avatar: http://tse3.mm.bing.net/th?id=OIP.M9010d1805b1b38c37a74b4c1e958ae88o0&pid=15.1
 
-# Assets
+locals:                                     #自定义常量
+  tags: 标签
+  about: 关于
+active: 技术                                 #自定义常量
+
+markdown: kramdown                         #markdown解释器
+
+# google analytics 设置
+#ga:
+#  id:
+#  url:
 #
-# We specify the directory for Jekyll so we can use @imports.
-#sass:
-#  sass_dir:          _scss
-#  style:            :compressed
+
+# baidu analytics 设置
+
+#ba:
+ # src: //hm.baidu.com/hm.js?xxxxxxxx
+
+# disqus 设置
+#disqus:
+  #shortname: coolnameismy
